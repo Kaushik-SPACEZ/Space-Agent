@@ -1,0 +1,27 @@
+state,district,start_date,end_date,mean_ndvi,min_ndvi,max_ndvi,satellite,resolution,scene_count,crop_stress_detected,latitude,longitude
+Punjab,Ludhiana,2023-01-01,2023-01-31,0.72,0.45,0.85,Sentinel-2,10m,8,False,30.9010,75.8573
+Punjab,Amritsar,2023-02-01,2023-02-28,0.68,0.42,0.82,Sentinel-2,10m,7,False,31.6340,74.8723
+Haryana,Karnal,2023-01-15,2023-02-15,0.70,0.48,0.84,Sentinel-2,10m,9,False,29.6857,76.9905
+Haryana,Hisar,2023-03-01,2023-03-31,0.65,0.40,0.79,Sentinel-2,10m,8,True,29.1492,75.7217
+Uttar Pradesh,Meerut,2023-02-10,2023-03-10,0.69,0.44,0.83,Sentinel-2,10m,8,False,28.9845,77.7064
+Uttar Pradesh,Agra,2023-04-01,2023-04-30,0.58,0.35,0.75,Sentinel-2,10m,10,True,27.1767,78.0081
+Maharashtra,Nashik,2023-06-01,2023-06-30,0.62,0.38,0.78,Sentinel-2,10m,9,False,19.9975,73.7898
+Maharashtra,Nagpur,2023-07-01,2023-07-31,0.74,0.52,0.87,Sentinel-2,10m,11,False,21.1458,79.0882
+Karnataka,Belgaum,2023-05-15,2023-06-15,0.66,0.41,0.80,Sentinel-2,10m,10,False,15.8497,74.4977
+Karnataka,Hubli,2023-08-01,2023-08-31,0.71,0.48,0.85,Sentinel-2,10m,12,False,15.3647,75.1240
+Tamil Nadu,Coimbatore,2023-01-01,2023-01-31,0.64,0.39,0.77,Sentinel-2,10m,8,True,11.0168,76.9558
+Tamil Nadu,Madurai,2023-09-01,2023-09-30,0.69,0.45,0.82,Sentinel-2,10m,11,False,9.9252,78.1198
+Andhra Pradesh,Guntur,2023-03-15,2023-04-15,0.73,0.50,0.86,Sentinel-2,10m,10,False,16.3067,80.4365
+Andhra Pradesh,Anantapur,2023-05-01,2023-05-31,0.55,0.32,0.72,Sentinel-2,10m,9,True,14.6819,77.6006
+Telangana,Hyderabad,2023-06-15,2023-07-15,0.67,0.43,0.81,Sentinel-2,10m,10,False,17.3850,78.4867
+Telangana,Warangal,2023-08-15,2023-09-15,0.70,0.47,0.84,Sentinel-2,10m,11,False,17.9689,79.5941
+West Bengal,Burdwan,2023-02-01,2023-02-28,0.71,0.49,0.85,Sentinel-2,10m,7,False,23.2324,87.8615
+West Bengal,Midnapore,2023-04-15,2023-05-15,0.68,0.44,0.82,Sentinel-2,10m,9,False,22.4248,87.3119
+Gujarat,Rajkot,2023-07-20,2023-08-20,0.63,0.40,0.76,Sentinel-2,10m,10,False,22.3039,70.8022
+Gujarat,Vadodara,2023-09-10,2023-10-10,0.72,0.51,0.86,Sentinel-2,10m,12,False,22.3072,73.1812
+Madhya Pradesh,Indore,2023-06-01,2023-06-30,0.66,0.42,0.79,Sentinel-2,10m,9,False,22.7196,75.8577
+Madhya Pradesh,Bhopal,2023-07-15,2023-08-15,0.69,0.46,0.83,Sentinel-2,10m,11,False,23.2599,77.4126
+Rajasthan,Udaipur,2023-08-01,2023-08-31,0.61,0.37,0.74,Sentinel-2,10m,10,True,24.5854,73.7125
+Rajasthan,Jodhpur,2023-09-01,2023-09-30,0.54,0.31,0.69,Sentinel-2,10m,9,True,26.2389,73.0243
+Kerala,Palakkad,2023-10-01,2023-10-31,0.75,0.54,0.88,Sentinel-2,10m,13,False,10.7867,76.6548
+Kerala,Wayanad,2023-11-01,2023-11-30,0.78,0.58,0.90,Sentinel-2,10m,14,False,11.6854,76.1320
