@@ -19,8 +19,22 @@ class LLMParameterExtractor:
     """Extract structured parameters from natural language queries using LLM"""
     
     def __init__(self):
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-        self.model = os.getenv("OPENAI_MODEL", "gpt-4-turbo-preview")
+        # Force reload environment variables
+        load_dotenv(override=True)
+        
+        api_key = os.getenv("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY not found in .env file")
+        
+        print(f"🔑 API Key loaded: {api_key[:20]}...{api_key[-10:]}")
+        
+        # Configure for Groq API (OpenAI-compatible)
+        self.client = OpenAI(
+            api_key=api_key,
+            base_url="https://api.groq.com/openai/v1"
+        )
+        self.model = os.getenv("OPENAI_MODEL", "llama-3.3-70b-versatile")
+        print(f"✅ Using Groq API with model: {self.model}")
         
     def _resolve_relative_dates(self, date_str: str, reference_date: Optional[date] = None) -> date:
         """
