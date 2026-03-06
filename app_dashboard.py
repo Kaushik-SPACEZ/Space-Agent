@@ -135,6 +135,11 @@ def execute_sql(sql_query: str):
 @app.route('/')
 def index():
     """Serve the dashboard"""
+    return render_template('dashboard_v2.html')
+
+@app.route('/v1')
+def index_v1():
+    """Serve the old dashboard"""
     return render_template('dashboard.html')
 
 

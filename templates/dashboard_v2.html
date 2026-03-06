@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Intelligence Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #F8FAFC;
+            color: #1E293B;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            background: white;
+            padding: 24px 32px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            margin-bottom: 24px;
+            border-left: 4px solid #6366F1;
+        }
+
+        .header h1 {
+            color: #1E293B;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .header p {
+            color: #64748B;
+            font-size: 14px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid #E2E8F0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .stat-card.primary { border-left-color: #6366F1; }
+        .stat-card.success { border-left-color: #10B981; }
+        .stat-card.warning { border-left-color: #F59E0B; }
+        .stat-card.danger { border-left-color: #EF4444; }
+
+        .stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1E293B;
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: #64748B;
+            font-weight: 500;
+        }
+
+        .stat-change {
+            font-size: 12px;
+            color: #10B981;
+            margin-top: 8px;
+        }
+
+        /* Main Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 1200px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .card-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1E293B;
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        /* Query Section */
+        .query-box {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .query-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid #E2E8F0;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.2s;
+        }
+
+        .query-input:focus {
+            outline: none;
+            border-color: #6366F1;
+        }
+
+        .query-btn {
+            padding: 12px 24px;
+            background: #6366F1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .query-btn:hover {
+            background: #4F46E5;
+        }
+
+        .query-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        /* Example Queries */
+        .example-queries {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .example-btn {
+            padding: 6px 12px;
+            background: #F1F5F9;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #475569;
+        }
+
+        .example-btn:hover {
+            background: #E2E8F0;
+            border-color: #CBD5E1;
+        }
+
+        /* Query Info */
+        .query-info {
+            background: #F8FAFC;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            border-left: 3px solid #6366F1;
+        }
+
+        .query-info-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748B;
+            margin-bottom: 4px;
+        }
+
+        .query-info-sql {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #475569;
+        }
+
+        /* Results Table */
+        .results-table-container {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .results-table thead {
+            position: sticky;
+            top: 0;
+            background: #F8FAFC;
+            z-index: 10;
+        }
+
+        .results-table th {
+            padding: 12px;
+            text-align: left;
+            font-size: 12px;
+            font-weight: 600;
+            color: #64748B;
+            text-transform: uppercase;
+            border-bottom: 2px solid #E2E8F0;
+        }
+
+        .results-table td {
+            padding: 12px;
+            font-size: 14px;
+            border-bottom: 1px solid #F1F5F9;
+        }
+
+        .results-table tbody tr:hover {
+            background: #F8FAFC;
+        }
+
+        .severity-badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .severity-low { background: #D1FAE5; color: #065F46; }
+        .severity-moderate { background: #FED7AA; color: #92400E; }
+        .severity-high { background: #FECACA; color: #991B1B; }
+        .severity-severe { background: #FCA5A5; color: #7F1D1D; }
+        .severity-catastrophic { background: #E9D5FF; color: #581C87; }
+
+        /* Map */
+        #map {
+            height: 600px;
+            border-radius: 8px;
+        }
+
+        /* Filters */
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .filter-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 6px;
+        }
+
+        .filter-select {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #E2E8F0;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #64748B;
+        }
+
+        .spinner {
+            border: 3px solid #F1F5F9;
+            border-top: 3px solid #6366F1;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 16px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Error */
+        .error {
+            background: #FEE2E2;
+            color: #991B1B;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            border-left: 3px solid #EF4444;
+            display: none;
+        }
+
+        /* Chart Container */
+        .chart-container {
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #94A3B8;
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .empty-state-text {
+            font-size: 16px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🌊 Flood Intelligence Dashboard</h1>
+            <p>Natural Language Interface for Flood Data Analysis & Monitoring</p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card primary">
+                <div class="stat-value" id="total-events">-</div>
+                <div class="stat-label">Total Flood Events</div>
+                <div class="stat-change">Across 19 states</div>
+            </div>
+            <div class="stat-card warning">
+                <div class="stat-value" id="recent-floods">-</div>
+                <div class="stat-label">Recent Floods</div>
+                <div class="stat-change">Last 30 days</div>
+            </div>
+            <div class="stat-card danger">
+                <div class="stat-value" id="total-area">-</div>
+                <div class="stat-label">Area Affected (km²)</div>
+                <div class="stat-change" id="states-affected">-</div>
+            </div>
+            <div class="stat-card success">
+                <div class="stat-value" id="avg-area">-</div>
+                <div class="stat-label">Avg Area per Event</div>
+                <div class="stat-change">Monitoring active</div>
+            </div>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="main-layout">
+            <!-- Left Column: Query & Results -->
+            <div>
+                <!-- Query Card -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <h2>🔍 Natural Language Query</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="query-box">
+                            <input 
+                                type="text" 
+                                id="query-input" 
+                                class="query-input" 
+                                placeholder="Ask a question... (e.g., Show me floods in Tamil Nadu)"
+                            />
+                            <button id="query-btn" class="query-btn">Search</button>
+                        </div>
+
+                        <div class="example-queries">
+                            <button class="example-btn" data-query="Show me all floods in Tamil Nadu">Tamil Nadu</button>
+                            <button class="example-btn" data-query="Show me severe floods in 2024">Severe 2024</button>
+                            <button class="example-btn" data-query="What are the recent floods in Kerala?">Recent Kerala</button>
+                            <button class="example-btn" data-query="Show me floods affecting more than 500 sq km">Large (>500 km²)</button>
+                            <button class="example-btn" data-query="List floods in West Bengal in 2023">West Bengal 2023</button>
+                        </div>
+
+                        <div id="query-info" class="query-info">
+                            <div class="query-info-title">Generated SQL:</div>
+                            <div class="query-info-sql" id="sql-display"></div>
+                        </div>
+
+                        <div id="error-display" class="error"></div>
+                    </div>
+                </div>
+
+                <!-- Results Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>📊 Flood Results (<span id="result-count">0</span>)</h2>
+                    </div>
+                    <div class="card-body">
+                        <div id="results-container">
+                            <div class="empty-state">
+                                <div class="empty-state-icon">🔍</div>
+                                <div class="empty-state-text">Enter a query to see results</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Map & Chart -->
+            <div>
+                <!-- Map Card -->
+                <div class="card" style="margin-bottom: 24px;">
+                    <div class="card-header">
+                        <h2>🗺️ Flood Locations Map</h2>
+                    </div>
+                    <div class="card-body" style="padding: 0;">
+                        <div id="map"></div>
+                    </div>
+                </div>
+
+                <!-- Chart Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <h2>📈 Severity Distribution</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container">
+                            <canvas id="severityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Initialize map
+        const map = L.map('map').setView([20.5937, 78.9629], 5);
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        let markers = [];
+        let severityChart = null;
+
+        // Initialize chart
+        const ctx = document.getElementById('severityChart').getContext('2d');
+
+        // Load statistics
+        async function loadStats() {
+            try {
+                const response = await fetch('/api/stats');
+                const data = await response.json();
+                
+                document.getElementById('total-events').textContent = data.total_events;
+                document.getElementById('recent-floods').textContent = data.recent_floods;
+                document.getElementById('total-area').textContent = Math.round(data.total_area_affected).toLocaleString();
+                document.getElementById('states-affected').textContent = `${Object.keys(data.state_counts).length} states affected`;
+                document.getElementById('avg-area').textContent = Math.round(data.total_area_affected / data.total_events).toLocaleString();
+
+                // Update chart
+                updateChart(data.severity_counts);
+            } catch (error) {
+                console.error('Error loading stats:', error);
+            }
+        }
+
+        // Update severity chart
+        function updateChart(severityCounts) {
+            const data = {
+                labels: Object.keys(severityCounts),
+                datasets: [{
+                    data: Object.values(severityCounts),
+                    backgroundColor: [
+                        '#10B981',
+                        '#F59E0B',
+                        '#EF4444',
+                        '#DC2626',
+                        '#8B5CF6'
+                    ]
+                }]
+            };
+
+            if (severityChart) {
+                severityChart.destroy();
+            }
+
+            severityChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: data,
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        // Load map data
+        async function loadMapData() {
+            try {
+                const response = await fetch('/api/map-data?limit=100');
+                const data = await response.json();
+                
+                markers.forEach(marker => map.removeLayer(marker));
+                markers = [];
+                
+                data.features.forEach(flood => {
+                    const marker = L.circleMarker([flood.latitude, flood.longitude], {
+                        radius: getSeverityRadius(flood.severity),
+                        fillColor: getSeverityColor(flood.severity),
+                        color: '#fff',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    }).addTo(map);
+                    
+                    marker.bindPopup(`
+                        <strong>${flood.uei}</strong><br>
+                        <strong>State:</strong> ${flood.state}<br>
+                        <strong>Date:</strong> ${flood.start_date}<br>
+                        <strong>Severity:</strong> ${flood.severity}<br>
+                        <strong>Area:</strong> ${flood.area_affected_sqkm} km²<br>
+                        <strong>Cause:</strong> ${flood.main_cause}
+                    `);
+                    
+                    markers.push(marker);
+                });
+            } catch (error) {
+                console.error('Error loading map data:', error);
+            }
+        }
+
+        function getSeverityColor(severity) {
+            const colors = {
+                'Low': '#10B981',
+                'Moderate': '#F59E0B',
+                'High': '#EF4444',
+                'Severe': '#DC2626',
+                'Catastrophic': '#8B5CF6'
+            };
+            return colors[severity] || '#64748B';
+        }
+
+        function getSeverityRadius(severity) {
+            const sizes = {
+                'Low': 6,
+                'Moderate': 8,
+                'High': 10,
+                'Severe': 12,
+                'Catastrophic': 14
+            };
+            return sizes[severity] || 7;
+        }
+
+        // Execute query
+        async function executeQuery(query) {
+            const queryBtn = document.getElementById('query-btn');
+            const resultsContainer = document.getElementById('results-container');
+            const queryInfo = document.getElementById('query-info');
+            const sqlDisplay = document.getElementById('sql-display');
+            const errorDisplay = document.getElementById('error-display');
+            const resultCount = document.getElementById('result-count');
+            
+            queryBtn.disabled = true;
+            queryBtn.textContent = 'Searching...';
+            resultsContainer.innerHTML = '<div class="loading"><div class="spinner"></div>Processing query...</div>';
+            queryInfo.style.display = 'none';
+            errorDisplay.style.display = 'none';
+            
+            try {
+                const response = await fetch('/api/query', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    sqlDisplay.textContent = data.sql_query;
+                    queryInfo.style.display = 'block';
+                    resultCount.textContent = data.count;
+                    
+                    if (data.results.length === 0) {
+                        resultsContainer.innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div class="empty-state-text">No results found</div></div>';
+                    } else {
+                        resultsContainer.innerHTML = `
+                            <div class="results-table-container">
+                                <table class="results-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>State</th>
+                                            <th>Severity</th>
+                                            <th>Area (km²)</th>
+                                            <th>Cause</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        ${data.results.map(r => `
+                                            <tr>
+                                                <td>${r.start_date}</td>
+                                                <td>${r.state}</td>
+                                                <td><span class="severity-badge severity-${r.severity.toLowerCase()}">${r.severity}</span></td>
+                                                <td>${r.area_affected_sqkm}</td>
+                                                <td>${r.main_cause}</td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
+                    }
+                } else {
+                    errorDisplay.textContent = `Error: ${data.error}`;
+                    errorDisplay.style.display = 'block';
+                    resultsContainer.innerHTML = '';
+                }
+            } catch (error) {
+                errorDisplay.textContent = `Error: ${error.message}`;
+                errorDisplay.style.display = 'block';
+                resultsContainer.innerHTML = '';
+            } finally {
+                queryBtn.disabled = false;
+                queryBtn.textContent = 'Search';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('query-btn').addEventListener('click', () => {
+            const query = document.getElementById('query-input').value;
+            if (query.trim()) executeQuery(query);
+        });
+
+        document.getElementById('query-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                const query = e.target.value;
+                if (query.trim()) executeQuery(query);
+            }
+        });
+
+        document.querySelectorAll('.example-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const query = btn.getAttribute('data-query');
+                document.getElementById('query-input').value = query;
+                executeQuery(query);
+            });
+        });
+
+        // Load initial data
+        loadStats();
+        loadMapData();
+    </script>
+</body>
+</html>
