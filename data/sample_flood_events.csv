@@ -1,0 +1,251 @@
+uei,start_date,end_date,duration_days,latitude,longitude,state,district,severity,area_affected_sqkm,main_cause,description,event_source
+FLOOD-IND-0001,2024-05-02,2024-05-28,26,20.548042,73.708596,Gujarat,,Moderate,154.13,Urban Flooding,Flood situation in Gujarat affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0002,2023-11-04,2023-11-22,18,27.927516,94.490155,Assam,,Moderate,104.89,Urban Flooding,Severe flooding reported in Assam region,MODIS
+FLOOD-IND-0003,2021-12-27,2022-01-18,22,28.229626,82.452978,Uttar Pradesh,,Moderate,184.87,River Overflow,Emergency declared in Uttar Pradesh due to flooding,News Reports
+FLOOD-IND-0004,2024-07-20,2024-08-01,12,27.289813,94.619736,Assam,,Moderate,116.02,Cyclone,Flood event in Assam caused by cyclone,Landsat-8
+FLOOD-IND-0005,2021-02-13,2021-03-15,30,24.685626,84.281244,Jharkhand,,Moderate,59.76,Dam Release,Water logging and flooding in Jharkhand due to dam release,News Reports
+FLOOD-IND-0006,2021-04-14,2021-04-25,11,29.994237,79.845232,Uttarakhand,,Severe,886.29,Urban Flooding,Flood event in Uttarakhand caused by urban flooding,MODIS
+FLOOD-IND-0007,2023-10-21,2023-11-07,17,17.40106,74.34065,Karnataka,,High,203.47,Coastal Storm Surge,Water logging and flooding in Karnataka due to coastal storm surge,Sentinel-2 Optical
+FLOOD-IND-0008,2021-05-27,2021-06-06,10,24.361238,95.688309,Assam,,Moderate,172.22,Heavy Monsoon Rainfall,Emergency declared in Assam due to flooding,Sentinel-1 SAR
+FLOOD-IND-0009,2020-10-13,2020-11-07,25,30.307951,82.160087,Uttar Pradesh,,Severe,769.12,Prolonged Rainfall,Flood situation in Uttar Pradesh affecting multiple areas,Ground Reports
+FLOOD-IND-0010,2020-01-19,2020-01-29,10,33.060374,78.403387,Himachal Pradesh,,High,388.19,River Overflow,Water logging and flooding in Himachal Pradesh due to river overflow,Landsat-8
+FLOOD-IND-0011,2020-12-30,2020-12-31,1,29.549838,69.943527,Rajasthan,,Catastrophic,4287.76,Cloud Burst,Water logging and flooding in Rajasthan due to cloud burst,Landsat-8
+FLOOD-IND-0012,2020-01-31,2020-02-18,18,25.452785,87.223286,Bihar,,High,393.43,Cloud Burst,Emergency declared in Bihar due to flooding,Sentinel-1 SAR
+FLOOD-IND-0013,2022-11-25,2022-12-22,27,24.701154,85.298167,Bihar,,Moderate,67.89,Coastal Storm Surge,Water logging and flooding in Bihar due to coastal storm surge,Landsat-8
+FLOOD-IND-0014,2021-09-06,2021-09-07,1,30.588303,80.325991,Uttarakhand,,Severe,1153.03,Coastal Storm Surge,Water logging and flooding in Uttarakhand due to coastal storm surge,Sentinel-1 SAR
+FLOOD-IND-0015,2021-01-08,2021-02-03,26,26.670079,81.523289,Madhya Pradesh,,Low,34.39,Dam Release,Severe flooding reported in Madhya Pradesh region,Ground Reports
+FLOOD-IND-0016,2022-02-16,2022-03-18,30,25.859378,80.794438,Uttar Pradesh,,High,230.12,Flash Flood,Emergency declared in Uttar Pradesh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0017,2022-02-07,2022-02-13,6,25.068021,82.543274,Madhya Pradesh,,High,356.08,Heavy Monsoon Rainfall,Emergency declared in Madhya Pradesh due to flooding,Sentinel-2 Optical
+FLOOD-IND-0018,2021-11-28,2021-12-13,15,22.034197,83.33412,Chhattisgarh,,Low,33.87,Prolonged Rainfall,Severe flooding reported in Chhattisgarh region,Sentinel-1 SAR
+FLOOD-IND-0019,2021-10-23,2021-11-07,15,27.546796,82.762018,Uttar Pradesh,,Severe,821.84,Urban Flooding,Severe flooding reported in Uttar Pradesh region,Sentinel-1 SAR
+FLOOD-IND-0020,2021-05-30,2021-06-06,7,30.185081,74.052497,Punjab,,High,390.69,River Overflow,Flood event in Punjab caused by river overflow,Ground Reports
+FLOOD-IND-0021,2023-06-18,2023-07-13,25,17.674981,77.67027,Karnataka,,Moderate,69.45,Dam Release,Severe flooding reported in Karnataka region,Sentinel-1 SAR
+FLOOD-IND-0022,2020-01-21,2020-01-28,7,14.710843,82.939058,Andhra Pradesh,,Low,30.62,Urban Flooding,Severe flooding reported in Andhra Pradesh region,Ground Reports
+FLOOD-IND-0023,2021-11-21,2021-12-14,23,29.455811,76.551894,Haryana,,Moderate,78.72,River Overflow,Emergency declared in Haryana due to flooding,News Reports
+FLOOD-IND-0024,2020-10-05,2020-10-26,21,13.400088,77.1212,Karnataka,,Moderate,57.6,Heavy Monsoon Rainfall,Water logging and flooding in Karnataka due to heavy monsoon rainfall,MODIS
+FLOOD-IND-0025,2020-08-15,2020-09-11,27,32.018799,76.081962,Himachal Pradesh,,High,226.09,River Overflow,Water logging and flooding in Himachal Pradesh due to river overflow,News Reports
+FLOOD-IND-0026,2024-07-20,2024-08-05,16,31.074885,78.035078,Himachal Pradesh,,Severe,764.54,Dam Release,Severe flooding reported in Himachal Pradesh region,Ground Reports
+FLOOD-IND-0027,2024-05-10,2024-06-05,26,23.408479,85.951209,West Bengal,,Low,27.24,River Overflow,Severe flooding reported in West Bengal region,Sentinel-2 Optical
+FLOOD-IND-0028,2022-03-08,2022-04-04,27,9.101013,75.797871,Kerala,,High,373.11,River Overflow,Severe flooding reported in Kerala region,Sentinel-1 SAR
+FLOOD-IND-0029,2024-06-26,2024-07-17,21,24.156864,94.739937,Assam,,High,457.66,Glacial Lake Outburst,Flood event in Assam caused by glacial lake outburst,News Reports
+FLOOD-IND-0030,2024-10-26,2024-11-21,26,22.029475,82.58249,Madhya Pradesh,,Low,10.85,Heavy Monsoon Rainfall,Water logging and flooding in Madhya Pradesh due to heavy monsoon rainfall,News Reports
+FLOOD-IND-0031,2021-06-19,2021-07-16,27,11.209079,76.118317,Kerala,,Low,8.88,Dam Release,Flood event in Kerala caused by dam release,News Reports
+FLOOD-IND-0032,2021-02-18,2021-02-20,2,8.460696,79.875659,Tamil Nadu,,Moderate,184.13,Cyclone,Severe flooding reported in Tamil Nadu region,Landsat-8
+FLOOD-IND-0033,2020-05-11,2020-06-09,29,29.037127,84.258594,Uttar Pradesh,,Moderate,81.41,Dam Release,Emergency declared in Uttar Pradesh due to flooding,MODIS
+FLOOD-IND-0034,2020-10-31,2020-11-10,10,16.182504,80.766815,Maharashtra,,High,255.52,Heavy Monsoon Rainfall,Flood event in Maharashtra caused by heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0035,2023-08-02,2023-08-25,23,28.407071,74.730149,Haryana,,High,274.98,Heavy Monsoon Rainfall,Emergency declared in Haryana due to flooding,Ground Reports
+FLOOD-IND-0036,2021-02-10,2021-03-01,19,11.470522,76.601807,Kerala,,Moderate,63.65,Coastal Storm Surge,Water logging and flooding in Kerala due to coastal storm surge,News Reports
+FLOOD-IND-0037,2023-08-27,2023-09-23,27,20.224906,85.098697,Odisha,,Catastrophic,2323.22,Cyclone,Severe flooding reported in Odisha region,Sentinel-2 Optical
+FLOOD-IND-0038,2023-06-27,2023-07-06,9,25.219024,95.983688,Assam,,High,234.01,River Overflow,Emergency declared in Assam due to flooding,Landsat-8
+FLOOD-IND-0039,2023-10-07,2023-10-26,19,16.931163,77.665644,Karnataka,,Low,24.54,Flash Flood,Emergency declared in Karnataka due to flooding,Sentinel-1 SAR
+FLOOD-IND-0040,2022-10-12,2022-11-06,25,30.519626,77.677656,Himachal Pradesh,,Severe,561.02,Heavy Monsoon Rainfall,Flood event in Himachal Pradesh caused by heavy monsoon rainfall,News Reports
+FLOOD-IND-0041,2021-03-27,2021-04-21,25,21.502392,86.219064,West Bengal,,Moderate,61.6,Heavy Monsoon Rainfall,Flood situation in West Bengal affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0042,2021-10-05,2021-10-11,6,26.580609,88.31042,West Bengal,,Low,13.76,Coastal Storm Surge,Water logging and flooding in West Bengal due to coastal storm surge,News Reports
+FLOOD-IND-0043,2023-12-13,2023-12-23,10,25.011629,82.109048,Madhya Pradesh,,Moderate,135.22,Urban Flooding,Emergency declared in Madhya Pradesh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0044,2023-04-08,2023-04-15,7,16.394529,75.940527,Maharashtra,,Moderate,75.37,Prolonged Rainfall,Flood event in Maharashtra caused by prolonged rainfall,Sentinel-2 Optical
+FLOOD-IND-0045,2020-03-28,2020-04-14,17,23.461882,88.776246,West Bengal,,Low,11.66,Cloud Burst,Flood situation in West Bengal affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0046,2021-03-03,2021-03-12,9,11.813395,75.007387,Karnataka,,High,240.15,Glacial Lake Outburst,Water logging and flooding in Karnataka due to glacial lake outburst,MODIS
+FLOOD-IND-0047,2023-08-20,2023-09-04,15,14.010842,78.279656,Andhra Pradesh,,Moderate,155.74,Dam Release,Water logging and flooding in Andhra Pradesh due to dam release,Landsat-8
+FLOOD-IND-0048,2021-04-18,2021-05-01,13,29.957877,79.755622,Uttarakhand,,High,481.34,Cyclone,Emergency declared in Uttarakhand due to flooding,Landsat-8
+FLOOD-IND-0049,2020-11-24,2020-11-27,3,21.63618,81.534652,Odisha,,High,222.49,Heavy Monsoon Rainfall,Water logging and flooding in Odisha due to heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0050,2021-11-29,2021-12-16,17,20.78874,73.477171,Gujarat,,Low,4.43,Urban Flooding,Flood event in Gujarat caused by urban flooding,Ground Reports
+FLOOD-IND-0051,2023-06-28,2023-07-26,28,26.424251,87.091761,West Bengal,,Low,40.26,Flash Flood,Water logging and flooding in West Bengal due to flash flood,Sentinel-2 Optical
+FLOOD-IND-0052,2022-06-09,2022-06-11,2,23.03552,72.96015,Gujarat,,Moderate,140.0,River Overflow,Flood event in Gujarat caused by river overflow,Landsat-8
+FLOOD-IND-0053,2023-04-14,2023-05-05,21,9.598063,78.436988,Tamil Nadu,,Moderate,55.3,Heavy Monsoon Rainfall,Flood event in Tamil Nadu caused by heavy monsoon rainfall,News Reports
+FLOOD-IND-0054,2022-06-24,2022-07-01,7,21.607041,69.211283,Gujarat,,Moderate,139.23,River Overflow,Flood situation in Gujarat affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0055,2024-10-19,2024-11-06,18,31.853191,74.832477,Punjab,,Severe,1325.64,Dam Release,Flood event in Punjab caused by dam release,Landsat-8
+FLOOD-IND-0056,2023-09-29,2023-10-23,24,14.617997,77.453196,Karnataka,,High,499.57,River Overflow,Severe flooding reported in Karnataka region,Sentinel-2 Optical
+FLOOD-IND-0057,2023-05-26,2023-06-17,22,24.504561,68.967283,Gujarat,,Low,34.4,Coastal Storm Surge,Water logging and flooding in Gujarat due to coastal storm surge,Sentinel-1 SAR
+FLOOD-IND-0058,2020-08-07,2020-09-03,27,16.498239,79.824835,Andhra Pradesh,,Low,44.7,River Overflow,Severe flooding reported in Andhra Pradesh region,Sentinel-2 Optical
+FLOOD-IND-0059,2021-12-16,2022-01-02,17,16.860275,77.442402,Andhra Pradesh,,Moderate,57.85,Coastal Storm Surge,Water logging and flooding in Andhra Pradesh due to coastal storm surge,News Reports
+FLOOD-IND-0060,2021-04-17,2021-05-15,28,26.076747,89.795086,West Bengal,,Severe,1158.64,Cloud Burst,Flood event in West Bengal caused by cloud burst,Landsat-8
+FLOOD-IND-0061,2023-01-28,2023-02-20,23,25.24379,79.292715,Madhya Pradesh,,Moderate,50.55,Urban Flooding,Severe flooding reported in Madhya Pradesh region,MODIS
+FLOOD-IND-0062,2021-11-23,2021-12-01,8,13.447481,74.277458,Karnataka,,High,330.79,Cyclone,Emergency declared in Karnataka due to flooding,Sentinel-2 Optical
+FLOOD-IND-0063,2022-05-21,2022-05-31,10,23.780605,81.819049,Madhya Pradesh,,High,249.0,Heavy Monsoon Rainfall,Emergency declared in Madhya Pradesh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0064,2024-07-29,2024-07-30,1,26.183633,84.218166,Bihar,,Moderate,80.33,Heavy Monsoon Rainfall,Severe flooding reported in Bihar region,Landsat-8
+FLOOD-IND-0065,2020-03-18,2020-03-25,7,14.118721,77.782044,Karnataka,,High,414.18,Cyclone,Water logging and flooding in Karnataka due to cyclone,Ground Reports
+FLOOD-IND-0066,2024-02-06,2024-03-03,26,24.395297,74.979795,Rajasthan,,High,222.22,Dam Release,Flood event in Rajasthan caused by dam release,News Reports
+FLOOD-IND-0067,2024-09-13,2024-09-24,11,26.699329,89.653901,West Bengal,,High,259.59,Heavy Monsoon Rainfall,Emergency declared in West Bengal due to flooding,Sentinel-2 Optical
+FLOOD-IND-0068,2024-07-28,2024-08-10,13,19.82418,74.214912,Maharashtra,,Severe,538.45,Flash Flood,Flood situation in Maharashtra affecting multiple areas,News Reports
+FLOOD-IND-0069,2022-02-23,2022-02-26,3,29.420958,80.190427,Uttarakhand,,Low,2.41,Urban Flooding,Water logging and flooding in Uttarakhand due to urban flooding,Sentinel-2 Optical
+FLOOD-IND-0070,2020-09-03,2020-09-11,8,23.609979,86.668395,West Bengal,,Moderate,73.83,Coastal Storm Surge,Flood situation in West Bengal affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0071,2021-02-04,2021-02-23,19,16.4983,77.077138,Karnataka,,Severe,683.84,Dam Release,Severe flooding reported in Karnataka region,News Reports
+FLOOD-IND-0072,2022-11-16,2022-11-25,9,30.895049,76.4831,Himachal Pradesh,,Moderate,137.69,Heavy Monsoon Rainfall,Emergency declared in Himachal Pradesh due to flooding,MODIS
+FLOOD-IND-0073,2020-01-03,2020-01-29,26,25.570055,75.638103,Madhya Pradesh,,Low,5.29,Heavy Monsoon Rainfall,Emergency declared in Madhya Pradesh due to flooding,News Reports
+FLOOD-IND-0074,2021-06-19,2021-07-16,27,22.484339,69.880852,Gujarat,,Low,10.71,Glacial Lake Outburst,Emergency declared in Gujarat due to flooding,Ground Reports
+FLOOD-IND-0075,2020-05-13,2020-06-03,21,23.542053,74.16016,Madhya Pradesh,,Severe,1310.47,Flash Flood,Flood event in Madhya Pradesh caused by flash flood,Ground Reports
+FLOOD-IND-0076,2023-11-04,2023-11-11,7,25.644542,77.527909,Uttar Pradesh,,Moderate,188.63,River Overflow,Flood situation in Uttar Pradesh affecting multiple areas,Ground Reports
+FLOOD-IND-0077,2021-09-07,2021-10-07,30,22.777465,87.735499,West Bengal,,Moderate,51.98,Urban Flooding,Flood event in West Bengal caused by urban flooding,Ground Reports
+FLOOD-IND-0078,2024-05-20,2024-06-05,16,26.058255,87.300501,West Bengal,,High,291.09,Urban Flooding,Flood situation in West Bengal affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0079,2022-11-11,2022-11-16,5,23.574045,82.226058,Chhattisgarh,,Severe,705.21,Prolonged Rainfall,Flood event in Chhattisgarh caused by prolonged rainfall,News Reports
+FLOOD-IND-0080,2022-01-11,2022-01-17,6,19.943078,84.031181,Chhattisgarh,,Moderate,141.56,Dam Release,Water logging and flooding in Chhattisgarh due to dam release,Sentinel-1 SAR
+FLOOD-IND-0081,2021-12-13,2022-01-05,23,24.612684,80.655725,Madhya Pradesh,,High,458.19,Coastal Storm Surge,Emergency declared in Madhya Pradesh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0082,2022-02-12,2022-02-22,10,25.307283,92.120605,Assam,,Severe,1024.44,Cyclone,Flood event in Assam caused by cyclone,Sentinel-2 Optical
+FLOOD-IND-0083,2023-03-31,2023-04-30,30,31.134165,79.86122,Uttarakhand,,Low,7.97,Urban Flooding,Emergency declared in Uttarakhand due to flooding,Sentinel-1 SAR
+FLOOD-IND-0084,2024-05-30,2024-06-13,14,15.494356,79.580064,Andhra Pradesh,,Severe,1221.28,Flash Flood,Emergency declared in Andhra Pradesh due to flooding,News Reports
+FLOOD-IND-0085,2024-09-04,2024-09-05,1,29.142193,79.440562,Uttarakhand,,Severe,940.91,Flash Flood,Severe flooding reported in Uttarakhand region,Sentinel-1 SAR
+FLOOD-IND-0086,2024-11-05,2024-11-21,16,20.764326,73.030812,Gujarat,,Severe,1448.5,River Overflow,Flood situation in Gujarat affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0087,2024-05-09,2024-05-19,10,24.876865,77.596201,Uttar Pradesh,,High,337.86,Heavy Monsoon Rainfall,Severe flooding reported in Uttar Pradesh region,News Reports
+FLOOD-IND-0088,2020-11-10,2020-12-06,26,25.136182,88.2092,Bihar,,Severe,590.16,River Overflow,Severe flooding reported in Bihar region,Landsat-8
+FLOOD-IND-0089,2021-03-10,2021-04-07,28,25.231212,87.467596,Jharkhand,,High,489.88,Flash Flood,Water logging and flooding in Jharkhand due to flash flood,Sentinel-1 SAR
+FLOOD-IND-0090,2022-12-23,2023-01-07,15,20.352508,73.552801,Maharashtra,,Moderate,149.32,Heavy Monsoon Rainfall,Emergency declared in Maharashtra due to flooding,Sentinel-2 Optical
+FLOOD-IND-0091,2020-08-02,2020-08-27,25,21.991857,71.670595,Gujarat,,Moderate,151.74,Cyclone,Severe flooding reported in Gujarat region,MODIS
+FLOOD-IND-0092,2024-12-15,2024-12-30,15,18.752645,80.372106,Chhattisgarh,,High,254.67,Prolonged Rainfall,Flood situation in Chhattisgarh affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0093,2023-05-25,2023-06-24,30,13.299292,78.54863,Andhra Pradesh,,Moderate,82.56,Urban Flooding,Flood event in Andhra Pradesh caused by urban flooding,Sentinel-1 SAR
+FLOOD-IND-0094,2024-03-31,2024-04-16,16,11.28408,80.058077,Tamil Nadu,,High,332.37,Heavy Monsoon Rainfall,Water logging and flooding in Tamil Nadu due to heavy monsoon rainfall,Sentinel-2 Optical
+FLOOD-IND-0095,2021-01-17,2021-01-20,3,29.420151,70.871782,Rajasthan,,High,463.71,River Overflow,Flood event in Rajasthan caused by river overflow,Sentinel-2 Optical
+FLOOD-IND-0096,2020-06-27,2020-07-27,30,25.960997,79.447098,Uttar Pradesh,,Severe,681.48,Urban Flooding,Flood event in Uttar Pradesh caused by urban flooding,MODIS
+FLOOD-IND-0097,2024-04-10,2024-05-07,27,11.510053,76.99185,Tamil Nadu,,Moderate,96.0,Cyclone,Water logging and flooding in Tamil Nadu due to cyclone,Sentinel-2 Optical
+FLOOD-IND-0098,2020-12-06,2020-12-19,13,19.105111,83.766836,Odisha,,Moderate,115.85,Flash Flood,Flood event in Odisha caused by flash flood,Sentinel-1 SAR
+FLOOD-IND-0099,2023-05-13,2023-06-04,22,24.015532,87.04366,West Bengal,,High,367.5,Coastal Storm Surge,Water logging and flooding in West Bengal due to coastal storm surge,Ground Reports
+FLOOD-IND-0100,2023-02-04,2023-02-28,24,17.930504,74.397001,Maharashtra,,Moderate,181.24,Coastal Storm Surge,Severe flooding reported in Maharashtra region,Landsat-8
+FLOOD-IND-0101,2023-07-24,2023-07-25,1,18.80412,81.894898,Odisha,,High,394.72,Dam Release,Severe flooding reported in Odisha region,News Reports
+FLOOD-IND-0102,2020-02-04,2020-02-23,19,16.664549,80.83049,Maharashtra,,Moderate,181.23,Dam Release,Severe flooding reported in Maharashtra region,Landsat-8
+FLOOD-IND-0103,2021-04-19,2021-05-04,15,15.154334,75.397976,Karnataka,,High,354.98,Cloud Burst,Water logging and flooding in Karnataka due to cloud burst,News Reports
+FLOOD-IND-0104,2020-01-21,2020-02-19,29,25.862892,87.081254,West Bengal,,Moderate,93.73,Heavy Monsoon Rainfall,Flood situation in West Bengal affecting multiple areas,MODIS
+FLOOD-IND-0105,2023-05-08,2023-05-11,3,19.953194,86.411717,Odisha,,Moderate,140.24,Heavy Monsoon Rainfall,Flood situation in Odisha affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0106,2023-04-10,2023-04-27,17,14.261751,74.010702,Karnataka,,High,288.6,Dam Release,Emergency declared in Karnataka due to flooding,Landsat-8
+FLOOD-IND-0107,2020-11-12,2020-11-16,4,29.429776,80.552661,Uttar Pradesh,,Severe,707.45,Heavy Monsoon Rainfall,Flood event in Uttar Pradesh caused by heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0108,2020-02-29,2020-03-10,10,26.45992,95.34114,Assam,,Moderate,55.95,Urban Flooding,Flood event in Assam caused by urban flooding,Sentinel-1 SAR
+FLOOD-IND-0109,2024-06-28,2024-07-27,29,31.038824,75.713098,Punjab,,Moderate,188.94,Heavy Monsoon Rainfall,Severe flooding reported in Punjab region,Sentinel-1 SAR
+FLOOD-IND-0110,2020-01-16,2020-02-14,29,21.509518,83.015882,Odisha,,Moderate,106.72,Cyclone,Flood situation in Odisha affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0111,2022-02-10,2022-03-09,27,17.257014,77.021762,Karnataka,,High,204.73,River Overflow,Emergency declared in Karnataka due to flooding,Sentinel-2 Optical
+FLOOD-IND-0112,2020-11-08,2020-11-19,11,24.516526,86.911634,Jharkhand,,High,458.69,Cloud Burst,Flood event in Jharkhand caused by cloud burst,Sentinel-1 SAR
+FLOOD-IND-0113,2022-02-11,2022-03-02,19,28.841264,80.459591,Uttarakhand,,High,392.05,Heavy Monsoon Rainfall,Water logging and flooding in Uttarakhand due to heavy monsoon rainfall,News Reports
+FLOOD-IND-0114,2021-07-05,2021-07-08,3,27.451879,94.684937,Assam,,Moderate,64.26,Cyclone,Flood event in Assam caused by cyclone,Sentinel-1 SAR
+FLOOD-IND-0115,2021-01-22,2021-02-11,20,25.213026,79.272063,Uttar Pradesh,,Moderate,115.2,Urban Flooding,Water logging and flooding in Uttar Pradesh due to urban flooding,Sentinel-1 SAR
+FLOOD-IND-0116,2024-05-18,2024-05-26,8,30.181147,76.893289,Haryana,,High,380.07,Coastal Storm Surge,Water logging and flooding in Haryana due to coastal storm surge,Sentinel-1 SAR
+FLOOD-IND-0117,2023-01-11,2023-01-29,18,10.80776,75.261697,Kerala,,Moderate,82.47,Dam Release,Severe flooding reported in Kerala region,Landsat-8
+FLOOD-IND-0118,2023-09-02,2023-09-15,13,23.977643,83.701221,Chhattisgarh,,High,427.85,Flash Flood,Flood situation in Chhattisgarh affecting multiple areas,News Reports
+FLOOD-IND-0119,2024-03-17,2024-03-30,13,26.739604,79.635915,Uttar Pradesh,,High,497.26,River Overflow,Severe flooding reported in Uttar Pradesh region,MODIS
+FLOOD-IND-0120,2022-09-08,2022-10-03,25,10.642127,75.76314,Kerala,,Moderate,152.24,River Overflow,Flood situation in Kerala affecting multiple areas,Landsat-8
+FLOOD-IND-0121,2023-02-22,2023-03-02,8,13.396605,77.904705,Karnataka,,High,222.81,Heavy Monsoon Rainfall,Water logging and flooding in Karnataka due to heavy monsoon rainfall,Ground Reports
+FLOOD-IND-0122,2021-09-03,2021-09-16,13,29.645433,74.249106,Rajasthan,,Low,25.95,Cloud Burst,Flood situation in Rajasthan affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0123,2021-11-06,2021-11-26,20,25.435993,84.239901,Bihar,,High,336.73,Urban Flooding,Flood situation in Bihar affecting multiple areas,Landsat-8
+FLOOD-IND-0124,2022-03-31,2022-04-28,28,30.557376,79.375199,Uttarakhand,,High,217.68,Urban Flooding,Emergency declared in Uttarakhand due to flooding,MODIS
+FLOOD-IND-0125,2022-08-16,2022-09-06,21,25.945525,75.142515,Rajasthan,,Moderate,82.01,River Overflow,Water logging and flooding in Rajasthan due to river overflow,News Reports
+FLOOD-IND-0126,2021-02-07,2021-03-06,27,29.095727,75.098492,Haryana,,Moderate,177.04,Cyclone,Flood situation in Haryana affecting multiple areas,MODIS
+FLOOD-IND-0127,2023-01-09,2023-01-30,21,24.853745,86.504935,West Bengal,,Moderate,108.5,Coastal Storm Surge,Flood event in West Bengal caused by coastal storm surge,Landsat-8
+FLOOD-IND-0128,2023-11-14,2023-12-06,22,24.871934,80.278541,Uttar Pradesh,,Moderate,110.83,River Overflow,Severe flooding reported in Uttar Pradesh region,MODIS
+FLOOD-IND-0129,2024-03-24,2024-04-04,11,12.609584,79.875798,Tamil Nadu,,High,460.47,Glacial Lake Outburst,Severe flooding reported in Tamil Nadu region,Sentinel-2 Optical
+FLOOD-IND-0130,2022-05-17,2022-06-14,28,31.411557,78.247042,Uttarakhand,,Severe,855.74,Flash Flood,Emergency declared in Uttarakhand due to flooding,Sentinel-1 SAR
+FLOOD-IND-0131,2022-05-05,2022-05-07,2,20.244793,81.343878,Odisha,,High,408.95,Dam Release,Severe flooding reported in Odisha region,Landsat-8
+FLOOD-IND-0132,2023-08-19,2023-08-26,7,25.818399,91.558573,Assam,,Severe,886.59,Heavy Monsoon Rainfall,Emergency declared in Assam due to flooding,News Reports
+FLOOD-IND-0133,2021-09-02,2021-09-09,7,25.893693,74.245343,Rajasthan,,Low,46.04,River Overflow,Flood event in Rajasthan caused by river overflow,MODIS
+FLOOD-IND-0134,2020-07-09,2020-07-20,11,25.970693,87.051211,Bihar,,Low,31.49,Heavy Monsoon Rainfall,Flood event in Bihar caused by heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0135,2024-05-26,2024-06-19,24,24.118895,90.795479,Assam,,Moderate,53.62,River Overflow,Severe flooding reported in Assam region,Sentinel-1 SAR
+FLOOD-IND-0136,2021-05-04,2021-05-16,12,24.005504,88.229998,West Bengal,,Low,44.76,Dam Release,Flood event in West Bengal caused by dam release,Ground Reports
+FLOOD-IND-0137,2021-03-15,2021-03-22,7,29.167357,79.716788,Uttarakhand,,Moderate,55.48,Cyclone,Severe flooding reported in Uttarakhand region,News Reports
+FLOOD-IND-0138,2022-04-12,2022-04-25,13,13.340953,78.074806,Andhra Pradesh,,High,498.78,Cyclone,Severe flooding reported in Andhra Pradesh region,Sentinel-2 Optical
+FLOOD-IND-0139,2021-02-14,2021-02-16,2,31.43623,77.006138,Himachal Pradesh,,Severe,581.5,River Overflow,Flood event in Himachal Pradesh caused by river overflow,MODIS
+FLOOD-IND-0140,2024-07-05,2024-07-31,26,24.180665,93.89,Assam,,Moderate,123.66,River Overflow,Flood situation in Assam affecting multiple areas,News Reports
+FLOOD-IND-0141,2021-05-25,2021-06-13,19,26.131261,77.713162,Madhya Pradesh,,Moderate,56.9,Cloud Burst,Flood situation in Madhya Pradesh affecting multiple areas,News Reports
+FLOOD-IND-0142,2023-11-17,2023-11-21,4,32.606073,78.177219,Himachal Pradesh,,Severe,1219.27,Flash Flood,Flood situation in Himachal Pradesh affecting multiple areas,News Reports
+FLOOD-IND-0143,2020-11-10,2020-11-30,20,9.21568,77.606929,Tamil Nadu,,Moderate,92.22,Cyclone,Flood situation in Tamil Nadu affecting multiple areas,News Reports
+FLOOD-IND-0144,2024-12-17,2025-01-01,15,23.89739,84.227678,Chhattisgarh,,Moderate,144.39,Heavy Monsoon Rainfall,Flood event in Chhattisgarh caused by heavy monsoon rainfall,News Reports
+FLOOD-IND-0145,2024-10-15,2024-10-19,4,24.083138,90.188524,Assam,,High,301.42,Dam Release,Flood event in Assam caused by dam release,Ground Reports
+FLOOD-IND-0146,2021-08-27,2021-08-31,4,26.583336,88.105519,Bihar,,Low,17.3,Urban Flooding,Flood event in Bihar caused by urban flooding,MODIS
+FLOOD-IND-0147,2022-08-08,2022-09-04,27,22.187611,84.409324,Jharkhand,,Moderate,150.71,Urban Flooding,Flood event in Jharkhand caused by urban flooding,News Reports
+FLOOD-IND-0148,2021-12-14,2021-12-24,10,14.399069,74.946455,Karnataka,,Moderate,71.34,Heavy Monsoon Rainfall,Severe flooding reported in Karnataka region,Ground Reports
+FLOOD-IND-0149,2021-02-23,2021-03-08,13,25.102821,90.081879,Assam,,Severe,908.71,Flash Flood,Flood event in Assam caused by flash flood,Ground Reports
+FLOOD-IND-0150,2023-11-08,2023-11-16,8,19.78298,83.753068,Odisha,,Moderate,148.11,Heavy Monsoon Rainfall,Flood situation in Odisha affecting multiple areas,Ground Reports
+FLOOD-IND-0151,2020-03-30,2020-04-23,24,8.755614,77.950695,Tamil Nadu,,Low,9.83,Prolonged Rainfall,Emergency declared in Tamil Nadu due to flooding,Landsat-8
+FLOOD-IND-0152,2020-06-21,2020-07-14,23,16.956677,78.839148,Andhra Pradesh,,Moderate,85.5,River Overflow,Water logging and flooding in Andhra Pradesh due to river overflow,News Reports
+FLOOD-IND-0153,2024-09-25,2024-09-26,1,25.090609,85.4172,Jharkhand,,High,315.74,River Overflow,Water logging and flooding in Jharkhand due to river overflow,Sentinel-1 SAR
+FLOOD-IND-0154,2022-08-07,2022-08-16,9,24.330804,86.105501,Bihar,,Catastrophic,3000.96,River Overflow,Flood situation in Bihar affecting multiple areas,MODIS
+FLOOD-IND-0155,2021-08-06,2021-08-10,4,25.45309,81.776603,Madhya Pradesh,,Moderate,135.41,River Overflow,Flood situation in Madhya Pradesh affecting multiple areas,Ground Reports
+FLOOD-IND-0156,2021-03-19,2021-03-31,12,12.793538,75.230857,Kerala,,High,233.95,Cyclone,Severe flooding reported in Kerala region,News Reports
+FLOOD-IND-0157,2023-02-23,2023-03-13,18,23.845251,76.103701,Rajasthan,,High,340.29,River Overflow,Flood event in Rajasthan caused by river overflow,Sentinel-2 Optical
+FLOOD-IND-0158,2022-10-28,2022-11-19,22,23.31762,84.089615,Chhattisgarh,,Catastrophic,2663.03,Prolonged Rainfall,Water logging and flooding in Chhattisgarh due to prolonged rainfall,News Reports
+FLOOD-IND-0159,2023-03-08,2023-03-18,10,19.421473,76.968643,Maharashtra,,Severe,559.44,River Overflow,Water logging and flooding in Maharashtra due to river overflow,Sentinel-2 Optical
+FLOOD-IND-0160,2022-01-19,2022-02-01,13,25.095058,87.037283,Jharkhand,,Catastrophic,4693.49,Coastal Storm Surge,Severe flooding reported in Jharkhand region,News Reports
+FLOOD-IND-0161,2020-03-12,2020-03-24,12,15.406329,77.311934,Andhra Pradesh,,High,397.71,Urban Flooding,Emergency declared in Andhra Pradesh due to flooding,Ground Reports
+FLOOD-IND-0162,2022-01-08,2022-01-28,20,8.922191,74.830874,Kerala,,Moderate,103.86,River Overflow,Flood event in Kerala caused by river overflow,Ground Reports
+FLOOD-IND-0163,2022-02-16,2022-03-09,21,30.044739,76.055617,Haryana,,Moderate,90.35,Flash Flood,Severe flooding reported in Haryana region,Ground Reports
+FLOOD-IND-0164,2022-07-22,2022-07-26,4,26.934207,75.597419,Rajasthan,,Moderate,81.26,Heavy Monsoon Rainfall,Water logging and flooding in Rajasthan due to heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0165,2020-08-04,2020-08-28,24,11.792694,75.890797,Karnataka,,Moderate,137.54,River Overflow,Flood event in Karnataka caused by river overflow,Landsat-8
+FLOOD-IND-0166,2020-10-24,2020-11-04,11,20.754974,71.182113,Gujarat,,High,475.53,River Overflow,Flood event in Gujarat caused by river overflow,Sentinel-1 SAR
+FLOOD-IND-0167,2020-07-20,2020-08-18,29,31.040739,80.489408,Uttarakhand,,High,482.04,Heavy Monsoon Rainfall,Flood event in Uttarakhand caused by heavy monsoon rainfall,Sentinel-1 SAR
+FLOOD-IND-0168,2023-01-20,2023-01-30,10,27.252676,70.365694,Rajasthan,,Moderate,73.79,Cyclone,Water logging and flooding in Rajasthan due to cyclone,MODIS
+FLOOD-IND-0169,2020-12-07,2021-01-04,28,24.957078,89.69382,West Bengal,,Moderate,94.18,Coastal Storm Surge,Flood situation in West Bengal affecting multiple areas,News Reports
+FLOOD-IND-0170,2022-09-23,2022-10-21,28,25.178091,95.230664,Assam,,High,355.09,Heavy Monsoon Rainfall,Flood event in Assam caused by heavy monsoon rainfall,Sentinel-2 Optical
+FLOOD-IND-0171,2020-11-26,2020-12-09,13,25.273249,87.199312,Jharkhand,,Catastrophic,4696.82,Urban Flooding,Flood event in Jharkhand caused by urban flooding,Landsat-8
+FLOOD-IND-0172,2024-07-15,2024-07-22,7,21.016088,68.752061,Gujarat,,Catastrophic,3362.43,River Overflow,Emergency declared in Gujarat due to flooding,Sentinel-1 SAR
+FLOOD-IND-0173,2020-12-19,2020-12-22,3,15.782432,81.849228,Andhra Pradesh,,Catastrophic,3154.07,River Overflow,Water logging and flooding in Andhra Pradesh due to river overflow,News Reports
+FLOOD-IND-0174,2024-09-15,2024-10-10,25,19.949623,81.336932,Chhattisgarh,,Severe,858.74,Flash Flood,Water logging and flooding in Chhattisgarh due to flash flood,Sentinel-2 Optical
+FLOOD-IND-0175,2022-09-16,2022-09-28,12,24.118193,95.046952,Assam,,High,358.02,Coastal Storm Surge,Flood event in Assam caused by coastal storm surge,News Reports
+FLOOD-IND-0176,2020-01-31,2020-02-24,24,17.389623,82.688286,Andhra Pradesh,,Moderate,141.65,Prolonged Rainfall,Flood situation in Andhra Pradesh affecting multiple areas,MODIS
+FLOOD-IND-0177,2020-03-08,2020-04-03,26,19.022458,76.834672,Maharashtra,,Low,38.51,Cloud Burst,Emergency declared in Maharashtra due to flooding,News Reports
+FLOOD-IND-0178,2021-04-17,2021-04-21,4,24.541773,87.232843,West Bengal,,Moderate,171.71,Heavy Monsoon Rainfall,Flood event in West Bengal caused by heavy monsoon rainfall,Sentinel-2 Optical
+FLOOD-IND-0179,2023-02-08,2023-02-21,13,24.286384,88.480426,West Bengal,,Severe,1336.43,Heavy Monsoon Rainfall,Emergency declared in West Bengal due to flooding,MODIS
+FLOOD-IND-0180,2024-08-25,2024-09-08,14,23.842485,86.171405,West Bengal,,Severe,616.08,Heavy Monsoon Rainfall,Flood event in West Bengal caused by heavy monsoon rainfall,Sentinel-2 Optical
+FLOOD-IND-0181,2021-08-21,2021-09-14,24,23.341051,83.765407,Jharkhand,,Catastrophic,3363.73,Heavy Monsoon Rainfall,Severe flooding reported in Jharkhand region,Landsat-8
+FLOOD-IND-0182,2023-06-23,2023-07-02,9,29.74487,79.527729,Uttarakhand,,Moderate,157.64,Heavy Monsoon Rainfall,Emergency declared in Uttarakhand due to flooding,Landsat-8
+FLOOD-IND-0183,2023-05-06,2023-06-05,30,30.71859,78.43308,Himachal Pradesh,,Severe,979.79,Glacial Lake Outburst,Flood situation in Himachal Pradesh affecting multiple areas,Ground Reports
+FLOOD-IND-0184,2020-11-25,2020-12-10,15,31.274272,80.926561,Uttarakhand,,Moderate,153.42,Heavy Monsoon Rainfall,Water logging and flooding in Uttarakhand due to heavy monsoon rainfall,MODIS
+FLOOD-IND-0185,2023-06-03,2023-06-23,20,23.527488,83.871624,Chhattisgarh,,Low,5.12,Heavy Monsoon Rainfall,Water logging and flooding in Chhattisgarh due to heavy monsoon rainfall,Sentinel-1 SAR
+FLOOD-IND-0186,2020-07-12,2020-08-11,30,25.016037,83.302515,Bihar,,Low,1.68,Cloud Burst,Flood situation in Bihar affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0187,2021-07-12,2021-07-18,6,9.873044,77.454493,Tamil Nadu,,Moderate,55.9,Prolonged Rainfall,Flood event in Tamil Nadu caused by prolonged rainfall,Landsat-8
+FLOOD-IND-0188,2024-08-30,2024-09-01,2,16.304975,79.552866,Andhra Pradesh,,Moderate,192.91,River Overflow,Emergency declared in Andhra Pradesh due to flooding,Ground Reports
+FLOOD-IND-0189,2021-05-08,2021-05-10,2,28.607394,74.802732,Haryana,,High,233.8,Heavy Monsoon Rainfall,Severe flooding reported in Haryana region,Sentinel-2 Optical
+FLOOD-IND-0190,2023-12-14,2023-12-18,4,29.861642,80.792921,Uttarakhand,,High,417.94,Dam Release,Emergency declared in Uttarakhand due to flooding,MODIS
+FLOOD-IND-0191,2023-10-10,2023-10-28,18,29.440887,84.035802,Uttar Pradesh,,Severe,932.33,River Overflow,Flood situation in Uttar Pradesh affecting multiple areas,News Reports
+FLOOD-IND-0192,2023-09-05,2023-09-17,12,13.99191,75.54048,Karnataka,,Moderate,79.64,Urban Flooding,Water logging and flooding in Karnataka due to urban flooding,MODIS
+FLOOD-IND-0193,2022-06-23,2022-07-22,29,22.988135,87.019882,West Bengal,,Low,2.28,Heavy Monsoon Rainfall,Water logging and flooding in West Bengal due to heavy monsoon rainfall,News Reports
+FLOOD-IND-0194,2024-01-19,2024-02-12,24,20.781675,74.707714,Maharashtra,,High,473.93,Cloud Burst,Emergency declared in Maharashtra due to flooding,Ground Reports
+FLOOD-IND-0195,2023-06-26,2023-07-12,16,29.225554,75.326632,Haryana,,High,316.43,Urban Flooding,Flood situation in Haryana affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0196,2022-04-03,2022-05-02,29,30.722261,78.559987,Uttarakhand,,Low,26.37,Heavy Monsoon Rainfall,Emergency declared in Uttarakhand due to flooding,Ground Reports
+FLOOD-IND-0197,2023-01-02,2023-01-11,9,24.070778,84.152118,Chhattisgarh,,Moderate,183.53,Prolonged Rainfall,Emergency declared in Chhattisgarh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0198,2024-07-03,2024-07-14,11,25.679168,87.832494,Bihar,,Moderate,148.6,Heavy Monsoon Rainfall,Flood situation in Bihar affecting multiple areas,Landsat-8
+FLOOD-IND-0199,2020-01-06,2020-01-08,2,28.514271,77.227084,Uttar Pradesh,,Moderate,115.72,Urban Flooding,Severe flooding reported in Uttar Pradesh region,News Reports
+FLOOD-IND-0200,2022-03-06,2022-03-09,3,26.771256,75.073446,Madhya Pradesh,,Low,43.15,Prolonged Rainfall,Flood situation in Madhya Pradesh affecting multiple areas,Ground Reports
+FLOOD-IND-0201,2020-02-02,2020-02-18,16,31.448215,79.030977,Uttarakhand,,Moderate,147.31,Heavy Monsoon Rainfall,Emergency declared in Uttarakhand due to flooding,News Reports
+FLOOD-IND-0202,2022-12-03,2022-12-08,5,23.475135,83.655189,Jharkhand,,High,207.83,Cyclone,Flood event in Jharkhand caused by cyclone,Landsat-8
+FLOOD-IND-0203,2022-06-05,2022-07-04,29,10.405384,76.875185,Kerala,,Low,21.44,Coastal Storm Surge,Severe flooding reported in Kerala region,Ground Reports
+FLOOD-IND-0204,2020-10-17,2020-10-20,3,23.226888,77.226645,Rajasthan,,Low,6.24,Flash Flood,Flood event in Rajasthan caused by flash flood,Sentinel-1 SAR
+FLOOD-IND-0205,2024-11-23,2024-11-25,2,26.589059,80.564908,Madhya Pradesh,,Catastrophic,3865.07,Heavy Monsoon Rainfall,Severe flooding reported in Madhya Pradesh region,Sentinel-2 Optical
+FLOOD-IND-0206,2022-01-11,2022-01-29,18,26.358205,78.286604,Rajasthan,,High,303.46,Heavy Monsoon Rainfall,Severe flooding reported in Rajasthan region,Ground Reports
+FLOOD-IND-0207,2021-09-24,2021-10-15,21,18.03793,82.686407,Chhattisgarh,,Low,44.41,Cloud Burst,Emergency declared in Chhattisgarh due to flooding,News Reports
+FLOOD-IND-0208,2022-07-26,2022-08-10,15,21.439134,80.745235,Chhattisgarh,,High,391.58,River Overflow,Flood event in Chhattisgarh caused by river overflow,Ground Reports
+FLOOD-IND-0209,2023-12-04,2023-12-10,6,28.32912,69.775959,Rajasthan,,High,222.52,Cyclone,Flood situation in Rajasthan affecting multiple areas,News Reports
+FLOOD-IND-0210,2024-03-28,2024-04-24,27,25.946702,70.961776,Rajasthan,,Severe,1295.5,River Overflow,Flood situation in Rajasthan affecting multiple areas,Landsat-8
+FLOOD-IND-0211,2020-03-27,2020-04-03,7,26.321032,95.663104,Assam,,Moderate,81.94,Heavy Monsoon Rainfall,Emergency declared in Assam due to flooding,Sentinel-1 SAR
+FLOOD-IND-0212,2020-11-25,2020-12-22,27,25.641679,88.50317,West Bengal,,Low,29.52,Heavy Monsoon Rainfall,Flood event in West Bengal caused by heavy monsoon rainfall,Landsat-8
+FLOOD-IND-0213,2021-04-13,2021-05-04,21,12.57033,78.466262,Karnataka,,Moderate,65.02,River Overflow,Flood event in Karnataka caused by river overflow,Sentinel-2 Optical
+FLOOD-IND-0214,2021-04-28,2021-05-01,3,24.241035,70.859845,Gujarat,,Low,3.52,Heavy Monsoon Rainfall,Flood situation in Gujarat affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0215,2024-08-11,2024-08-13,2,11.973348,76.966585,Kerala,,High,485.7,River Overflow,Severe flooding reported in Kerala region,Sentinel-2 Optical
+FLOOD-IND-0216,2023-08-16,2023-08-27,11,26.545555,86.443269,Bihar,,Moderate,181.15,Dam Release,Flood event in Bihar caused by dam release,Ground Reports
+FLOOD-IND-0217,2023-09-08,2023-09-10,2,9.332969,76.956282,Kerala,,Severe,1423.22,Glacial Lake Outburst,Emergency declared in Kerala due to flooding,Ground Reports
+FLOOD-IND-0218,2024-03-02,2024-03-27,25,22.515896,86.189177,Jharkhand,,High,247.76,River Overflow,Severe flooding reported in Jharkhand region,Sentinel-2 Optical
+FLOOD-IND-0219,2023-10-21,2023-11-01,11,15.866563,74.991746,Karnataka,,Catastrophic,3807.1,Dam Release,Severe flooding reported in Karnataka region,Ground Reports
+FLOOD-IND-0220,2022-03-18,2022-03-21,3,25.771844,75.167883,Madhya Pradesh,,High,333.37,Heavy Monsoon Rainfall,Emergency declared in Madhya Pradesh due to flooding,Sentinel-1 SAR
+FLOOD-IND-0221,2021-04-05,2021-05-02,27,8.20666,75.048795,Kerala,,Severe,982.67,Heavy Monsoon Rainfall,Water logging and flooding in Kerala due to heavy monsoon rainfall,Sentinel-2 Optical
+FLOOD-IND-0222,2020-02-20,2020-03-08,17,25.090868,84.888441,Jharkhand,,High,249.47,Cloud Burst,Water logging and flooding in Jharkhand due to cloud burst,MODIS
+FLOOD-IND-0223,2022-01-17,2022-01-20,3,27.380049,85.695574,Bihar,,Moderate,145.32,Cyclone,Water logging and flooding in Bihar due to cyclone,Ground Reports
+FLOOD-IND-0224,2021-04-09,2021-04-26,17,27.670324,79.230925,Uttar Pradesh,,High,365.8,River Overflow,Flood situation in Uttar Pradesh affecting multiple areas,Sentinel-1 SAR
+FLOOD-IND-0225,2024-03-15,2024-04-05,21,20.931188,71.124426,Gujarat,,Low,29.97,Heavy Monsoon Rainfall,Severe flooding reported in Gujarat region,Landsat-8
+FLOOD-IND-0226,2020-01-19,2020-02-17,29,18.203789,84.066222,Odisha,,Severe,1139.44,Heavy Monsoon Rainfall,Flood situation in Odisha affecting multiple areas,Landsat-8
+FLOOD-IND-0227,2024-04-13,2024-04-14,1,30.448157,78.441223,Uttarakhand,,Moderate,190.8,Heavy Monsoon Rainfall,Emergency declared in Uttarakhand due to flooding,News Reports
+FLOOD-IND-0228,2020-02-28,2020-03-06,7,24.541563,79.195343,Madhya Pradesh,,Moderate,99.96,Heavy Monsoon Rainfall,Flood situation in Madhya Pradesh affecting multiple areas,Landsat-8
+FLOOD-IND-0229,2020-10-09,2020-11-05,27,29.011299,80.843291,Uttarakhand,,High,405.56,Prolonged Rainfall,Flood event in Uttarakhand caused by prolonged rainfall,Sentinel-1 SAR
+FLOOD-IND-0230,2021-02-10,2021-02-27,17,21.42508,78.463681,Maharashtra,,High,244.14,Cloud Burst,Emergency declared in Maharashtra due to flooding,MODIS
+FLOOD-IND-0231,2020-01-14,2020-02-01,18,16.894872,74.887393,Maharashtra,,Moderate,127.32,Coastal Storm Surge,Flood situation in Maharashtra affecting multiple areas,Landsat-8
+FLOOD-IND-0232,2021-08-19,2021-08-21,2,15.971032,80.35761,Andhra Pradesh,,Low,16.27,Dam Release,Water logging and flooding in Andhra Pradesh due to dam release,Sentinel-1 SAR
+FLOOD-IND-0233,2022-05-11,2022-06-10,30,30.872892,75.592842,Punjab,,Low,42.63,Dam Release,Water logging and flooding in Punjab due to dam release,Landsat-8
+FLOOD-IND-0234,2024-06-18,2024-07-04,16,23.108568,83.537944,Jharkhand,,High,280.11,Coastal Storm Surge,Severe flooding reported in Jharkhand region,News Reports
+FLOOD-IND-0235,2023-02-21,2023-03-11,18,26.721226,88.336172,West Bengal,,Moderate,54.3,Dam Release,Emergency declared in West Bengal due to flooding,MODIS
+FLOOD-IND-0236,2022-04-07,2022-04-19,12,24.086049,87.728431,Jharkhand,,Low,26.26,Coastal Storm Surge,Flood situation in Jharkhand affecting multiple areas,Sentinel-2 Optical
+FLOOD-IND-0237,2022-12-06,2022-12-13,7,18.810084,76.47813,Maharashtra,,High,453.15,Urban Flooding,Flood event in Maharashtra caused by urban flooding,MODIS
+FLOOD-IND-0238,2022-01-02,2022-01-03,1,26.803774,84.830394,Bihar,,Moderate,158.31,Dam Release,Flood event in Bihar caused by dam release,News Reports
+FLOOD-IND-0239,2024-04-20,2024-05-14,24,25.530114,82.33038,Madhya Pradesh,,Moderate,63.9,River Overflow,Severe flooding reported in Madhya Pradesh region,Sentinel-2 Optical
+FLOOD-IND-0240,2022-06-27,2022-07-09,12,26.618996,77.906578,Madhya Pradesh,,High,396.41,Heavy Monsoon Rainfall,Severe flooding reported in Madhya Pradesh region,News Reports
+FLOOD-IND-0241,2023-07-24,2023-08-11,18,22.334222,72.285282,Gujarat,,Moderate,60.75,Urban Flooding,Water logging and flooding in Gujarat due to urban flooding,Landsat-8
+FLOOD-IND-0242,2023-01-05,2023-01-21,16,15.923643,76.829181,Karnataka,,High,374.91,Dam Release,Severe flooding reported in Karnataka region,Sentinel-1 SAR
+FLOOD-IND-0243,2024-10-09,2024-10-19,10,30.088573,73.666738,Rajasthan,,Catastrophic,4045.83,Coastal Storm Surge,Flood event in Rajasthan caused by coastal storm surge,Sentinel-1 SAR
+FLOOD-IND-0244,2021-07-27,2021-08-16,20,13.131377,78.93078,Tamil Nadu,,High,412.39,Prolonged Rainfall,Flood event in Tamil Nadu caused by prolonged rainfall,MODIS
+FLOOD-IND-0245,2020-04-28,2020-05-26,28,20.695662,84.388092,Odisha,,Severe,1448.52,Dam Release,Emergency declared in Odisha due to flooding,Sentinel-2 Optical
+FLOOD-IND-0246,2020-08-27,2020-09-23,27,14.475918,83.79022,Andhra Pradesh,,Moderate,90.12,Cyclone,Water logging and flooding in Andhra Pradesh due to cyclone,Landsat-8
+FLOOD-IND-0247,2020-05-04,2020-05-16,12,20.730968,71.079091,Gujarat,,Moderate,105.2,River Overflow,Flood situation in Gujarat affecting multiple areas,News Reports
+FLOOD-IND-0248,2020-07-21,2020-08-03,13,23.908816,81.011908,Uttar Pradesh,,Low,19.98,Heavy Monsoon Rainfall,Severe flooding reported in Uttar Pradesh region,News Reports
+FLOOD-IND-0249,2021-09-06,2021-09-20,14,28.406697,77.363904,Haryana,,Low,22.09,River Overflow,Flood event in Haryana caused by river overflow,Ground Reports
+FLOOD-IND-0250,2020-05-04,2020-05-20,16,25.220971,88.794682,West Bengal,,High,429.63,Dam Release,Emergency declared in West Bengal due to flooding,MODIS
