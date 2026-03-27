@@ -6,7 +6,7 @@ A **production-ready MVP** of a multi-pipeline Earth observation intelligence sy
 
 ---
 
-## 📦 Deliverables
+## 📦 Deliverables - overview
 
 ### 1. Core System Components
 
