@@ -4,6 +4,7 @@ Routes queries to appropriate pipelines
 """
 from typing import Dict, Any, Optional
 from datetime import datetime
+import os
 
 from models.schemas import (
     QueryInput, 
