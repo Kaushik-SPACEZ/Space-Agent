@@ -6,6 +6,7 @@ import html as _html
 from email.message import EmailMessage
 import streamlit as st
 from dotenv import load_dotenv
+import streamlit
  
 # Load environment variables (AICORE_* etc.)
 load_dotenv()
